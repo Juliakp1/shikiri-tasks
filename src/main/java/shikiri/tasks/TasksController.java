@@ -14,7 +14,7 @@ public interface TasksController {
 
     @PostMapping("/tasks")
     public ResponseEntity<TasksOut> create(
-        @RequestBody(required = true) String user,
+        @RequestBody(required = true) String name,
         @RequestBody(required = true) TasksIn in
     );
 
@@ -27,9 +27,8 @@ public interface TasksController {
 
     @GetMapping("/tasks")
     public ResponseEntity<TasksOut> read(
-        @RequestHeader(required = true, name = "id-user") String idUser,
-        @RequestHeader(required = true, name = "role-user") String roleUser,
-        @RequestHeader(required = true, name = "id-task") String idTask
+        @RequestHeader(required = true, name = "id-user") String user,
+        @RequestHeader(required = true, name = "id-task") String id
     );
     
 }
