@@ -9,6 +9,8 @@ public record TasksIn (
     String name,
     String user,
     String description,
+    String tool,
+    String board,
     Boolean done
 ) {
     
