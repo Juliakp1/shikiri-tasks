@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Jenkins Account') {
+        stage('Jenkins Task') {
             steps {
-                echo 'Jenkins Account'
+                echo 'Task Interface'
             }
         }
         stage('Build') { 

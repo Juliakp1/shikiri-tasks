@@ -23,7 +23,6 @@ public interface TasksController {
 
     @GetMapping("/tasks")
     public ResponseEntity<TasksOut> read(
-        @RequestHeader(required = true, name = "id-user") String user,
         @RequestHeader(required = true, name = "id-task") String id
     );
     

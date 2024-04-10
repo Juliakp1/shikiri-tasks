@@ -7,7 +7,6 @@ import lombok.experimental.Accessors;
 @Accessors(fluent = true, chain = true)
 public record TasksIn (
     String name,
-    String user,
     String description,
     String tool,
     String board,
