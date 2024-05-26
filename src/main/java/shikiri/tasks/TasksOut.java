@@ -7,7 +7,11 @@ import lombok.experimental.Accessors;
 @Accessors(fluent = true, chain = true)
 public record TasksOut (
     String id,
-    String name
+    String name,
+    String description,
+    Boolean done,
+    String toolId,
+    String boardId
 ) {
     
 }

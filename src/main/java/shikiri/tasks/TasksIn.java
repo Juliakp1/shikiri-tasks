@@ -8,8 +8,8 @@ import lombok.experimental.Accessors;
 public record TasksIn (
     String name,
     String description,
-    String tool,
-    String board,
+    String toolId,
+    String boardId,
     Boolean done
 ) {
     
