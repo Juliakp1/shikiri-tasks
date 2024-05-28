@@ -17,7 +17,7 @@ public interface TasksController {
         @RequestBody(required = true) TasksIn in
     );
 
-    @PutMapping("/tasks}")
+    @PutMapping("/tasks")
     public ResponseEntity<TasksOut> update(
         @RequestBody(required = true) TasksIn in
     );

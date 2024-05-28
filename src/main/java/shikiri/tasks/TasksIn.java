@@ -8,9 +8,9 @@ import lombok.experimental.Accessors;
 public record TasksIn (
     String name,
     String description,
+    Boolean done,
     String toolId,
-    String boardId,
-    Boolean done
+    String boardId
 ) {
     
 }
